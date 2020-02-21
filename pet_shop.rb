@@ -10,4 +10,7 @@ def add_or_remove_cash(pet_shop, cash)
   pet_shop[:admin][:total_cash] += cash
 end
 
+def pets_sold(pet_shop)
+  pet_shop[:admin][:pets_sold]
+end
 # pet_shop[:pets].reduce(0) { |total, pet| total + pet[:price] }
