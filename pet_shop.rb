@@ -13,4 +13,9 @@ end
 def pets_sold(pet_shop)
   pet_shop[:admin][:pets_sold]
 end
+
+def increase_pets_sold(pet_shop, num_sold)
+  pet_shop[:admin][:pets_sold] +=  num_sold
+end
+
 # pet_shop[:pets].reduce(0) { |total, pet| total + pet[:price] }
