@@ -1,3 +1,5 @@
+# pet_shop[:pets].reduce(0) { |total, pet| total + pet[:price] }
+
  def pet_shop_name(pet_shop)
    return pet_shop[:name]
  end
@@ -21,4 +23,7 @@ end
 def stock_count(pet_shop)
   return pet_shop[:pets].length
 end
-# pet_shop[:pets].reduce(0) { |total, pet| total + pet[:price] }
+
+def pets_by_breed(pet_shop, breed)
+  return pet_shop[:pets].select { |pets| pets[:breed] == breed }
+end
